@@ -1,4 +1,7 @@
+using System;
 namespace MaNguonMo.Models
 {
-    public string Name { get; set; }
+    public class Student{
+        public String Name { get; set; }
+    }
 }
