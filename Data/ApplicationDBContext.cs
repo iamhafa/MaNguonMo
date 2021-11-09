@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using MaNguonMo.Models;
-
+namespace MaNguonMo.Data{
     public class ApplicationDBContext : DbContext
     {
         public ApplicationDBContext (DbContextOptions<ApplicationDBContext> options)
@@ -14,3 +14,6 @@ using MaNguonMo.Models;
 
         public DbSet<MaNguonMo.Models.Movie> Movie { get; set; }
     }
+
+}
+    

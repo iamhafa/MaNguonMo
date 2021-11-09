@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-// using MaNguonMo.Data;
+using MaNguonMo.Data;
 using System;
 using System.Linq;
 

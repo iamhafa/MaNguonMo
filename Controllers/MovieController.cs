@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using MaNguonMo.Models;
-
+using MaNguonMo.Data;
 namespace MaNguonMo.Controllers
 {
     public class MovieController : Controller
