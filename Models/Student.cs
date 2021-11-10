@@ -1,7 +1,15 @@
 using System;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace MaNguonMo.Models
 {
-    public class Student{
-        public String Name { get; set; }
+    [Table("Students")]
+    public class Student
+    {
+        [Key]
+        public String StudentID { get; set; }
+        public String StudentName { get; set; }
+        public String Address { get; set; }
     }
 }

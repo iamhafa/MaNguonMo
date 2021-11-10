@@ -1,0 +1,30 @@
+@model MaNguonMo.Models.Person
+
+@{
+    ViewData["Title"] = "Chi tiết Con người";
+}
+
+<h1>Chi tiết Con người</h1>
+
+<div>
+    <h4>Con người</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PersonID)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PersonID)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PersonName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PersonName)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.PersonID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
